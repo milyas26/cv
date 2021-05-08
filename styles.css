@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',
+    sans-serif;
+}
+
+h1, h2 {
+    color: #166ab8;
+}
+
+h3, h4 {
+    color: #444440;
+}
+
+h2 {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    margin-top: 20px;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+p{
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+table {
+    margin-top: 20px;
+}
+
+table, th, tr, td {
+    border: 1px solid #555;
+    padding: 0;
+    margin: 0;
+}
+
+td {
+    padding-left: 5px;
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    padding: 70px;
+    padding-left: 100px;
+    margin: 100px  auto;
+    display: flex;
+    -webkit-box-shadow: 0px 2px 19px -13px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 2px 19px -13px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 2px 19px -13px rgba(0, 0, 0, 0.45);
+}
+
+.container::after{
+    content: '';
+    height: 100%;
+    width: 50px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.container .kanan {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.container .nama__profile {
+    font-size: 40px;
+}
+
+.container .pekerjaan {
+    margin-top: 0;
+    font-size: 25px;
+    position: relative;
+}
+.container .location {
+    margin-top: 0;
+    font-size: 20px;
+    position: relative;
+}
+
+.container .location::after {
+    content: '';
+    height: 3px;
+    width: 100px;
+    background-color: #555;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.container .kanan .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.container .kanan img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.container .kiri {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.bootcamp,
+.fullstack_javascript,
+.web_development,
+.siber_asia,
+.sma {
+    margin-left: 20px;
+}
+
+.container .kanan .contact p {
+    margin-bottom: 5px;
+}
+
+
+.container .kanan .social img{
+    max-width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: auto;
+    cursor: pointer;
+    opacity: .8;
+    transition: .3s;
+}
+
+.container .kanan .social img:hover {
+    opacity: 1.2;
+    padding: 20px;
+}
